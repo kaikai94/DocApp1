@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_patient_home"
+            android:icon="@drawable/outline_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_make_appointment"
+            android:icon="@drawable/outline_add_box_black_24dp"
+            android:title="@string/patient_make_appointment" />
+        <item
+            android:id="@+id/nav_patient_appointment"
+            android:icon="@drawable/outline_speaker_notes_black_24dp"
+            android:title="@string/patient_appointment" />
+        <item
+            android:id="@+id/nav_patient_profile"
+            android:icon="@drawable/outline_account_circle_black_24dp"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/outline_logout_black_24dp"
+            android:title="Logout" />
+    </group>
+</menu>

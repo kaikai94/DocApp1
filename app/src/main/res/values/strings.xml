@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">DocApp</string>
+    <string name="title_activity_patient_navigation">PatientNavigation</string>
+    <string name="title_activity_doctor_navigation">DoctorNavigation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="patient_make_appointment">Make Appointment</string>
+    <string name="patient_appointment">My Appointment</string>
+    <string name="profile">My Profile</string>
+
+    <string name="collection_patients">patients</string>
+    <string name="collection_accounts">accounts</string>
+    <string name="collection_appointments">appointments</string>
+    <string name="collection_doctors">doctors</string>
+    <string name="collection_doctors_speciality">doctor_speciality</string>
+    <string name="documentId">documentId</string>
+
+    <!--Doctor category data-->
+    <string name="specialityName">specialityName</string>
+
+    <!--Doctor  data-->
+    <string name="doctorId">doctorId</string>
+    <string name="doctorName">doctorName</string>
+    <string name="specialityId">specialityId</string>
+    <string name="badgeNo">badgeNo</string>
+
+
+    <string name="appointment_id">appointment_id</string>
+    <string name="userId">userId</string>
+    <string name="name">name</string>
+    <string name="age">age</string>
+    <string name="ic_no">ic_no</string>
+    <string name="email">email</string>
+    <string name="status">status</string>
+    <string name="account_type">acc_type</string>
+    <string name="date_time">date_time</string>
+    <string name="appointment_date">appointment_date</string>
+    <string name="appointment_time">appointment_time</string>
+    <string name="Patient">Patient</string>
+    <string name="Doctor">Doctor</string>
+
+    <string name="status_pending_payment">Pending Payment</string>
+    <string name="status_pending_approve">Pending Approve</string>
+    <string name="status_decline">Decline</string>
+    <string name="status_approve">Approve</string>
+
+    <!--Modify-->
+    <string name="date">date</string>
+    <string name="time">time</string>
+
+    <string name="history">history</string>
+    <string name="modify">modify</string>
+
+    <string-array name="programming_languages">
+        <item>item1</item>
+        <item>item12</item>
+        <item>item123</item>
+        <item>item1234</item>
+        <item>item12345</item>
+        <item>item123456</item>
+
+    </string-array>
+
+    <string-array name="description">
+        <item>desc1</item>
+        <item>desc112</item>
+        <item>desc1123</item>
+        <item>desc11234</item>
+        <item>desc112345</item>
+        <item>desc1123456</item>
+
+    </string-array>
+
+    <string-array name="timeslot">
+        <item>09:00 AM</item>
+        <item>10:00 AM</item>
+        <item>11:00 AM</item>
+        <item>12:00 PM</item>
+        <item>01:00 PM</item>
+        <item>02:00 PM</item>
+        <item>03:00 PM</item>
+        <item>04:00 PM</item>
+        <item>05:00 PM</item>
+        <item>06:00 PM</item>
+        <item>07:00 PM</item>
+        <item>08:00 PM</item>
+        <item>09:00 PM</item>
+        <item>10:00 PM</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_register_doctor">RegisterDoctorActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_patient_home">
+
+    <fragment
+        android:id="@+id/nav_patient_home"
+        android:name="com.example.docapp.patient.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_patient_home" />
+
+    <fragment
+        android:id="@+id/nav_make_appointment"
+        android:name="com.example.docapp.patient.ui.makeappointment.MakeAppointmentFragment"
+        android:label="@string/patient_make_appointment"
+        tools:layout="@layout/fragment_make_appointment" />
+
+    <fragment
+        android:id="@+id/nav_patient_appointment"
+        android:name="com.example.docapp.patient.ui.appointment.AppointmentFragment"
+        android:label="@string/patient_appointment"
+        tools:layout="@layout/fragment_patient_appointment" />
+
+    <fragment
+        android:id="@+id/nav_patient_profile"
+        android:name="com.example.docapp.patient.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_patient_profile" />
+</navigation>

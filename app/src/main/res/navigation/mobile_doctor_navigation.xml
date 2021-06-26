@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_doctor_navigation"
+    app:startDestination="@+id/nav_doctor_home">
+
+    <fragment
+        android:id="@+id/nav_doctor_home"
+        android:name="com.example.docapp.doctor.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_doctor_home" />
+
+    <fragment
+        android:id="@+id/nav_doctor_profile"
+        android:name="com.example.docapp.doctor.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_doctor_profile" />
+
+    <fragment
+        android:id="@+id/nav_doctor_appointment"
+        android:name="com.example.docapp.doctor.ui.appointment.AppointmentFragment"
+        android:label="@string/patient_appointment"
+        tools:layout="@layout/fragment_doctor_appointment" />
+</navigation>
