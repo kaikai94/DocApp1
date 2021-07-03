@@ -1,14 +1,18 @@
 package com.example.docapp.classes;
 
-import android.content.Context;
+public class User {
 
-import com.google.firebase.firestore.Exclude;
+    public UserInterface getUsers(String type){
+        if(type == null){
+            return null;
+        }
+        if(type.equalsIgnoreCase("PATIENT")){
+            return new Patient();
 
-public class User{
+        } else if(type.equalsIgnoreCase("DOCTOR")){
+            return new Doctor();
 
-    private String documentId;
-    private String name;
-    private int age;
-    private String ic_no;
-
+        }
+        return null;
+    }
 }

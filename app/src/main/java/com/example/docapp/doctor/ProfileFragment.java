@@ -1,7 +1,6 @@
 package com.example.docapp.doctor;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,10 +13,8 @@ import androidx.fragment.app.Fragment;
 
 import com.example.docapp.R;
 import com.example.docapp.classes.DoctorSpeciality;
-import com.example.docapp.classes.Doctor;
-import com.example.docapp.classes.User;
 import com.example.docapp.classes.UserInterface;
-import com.example.docapp.classes.UsersFactory;
+import com.example.docapp.classes.User;
 import com.example.docapp.classes.Utilities;
 import com.example.docapp.databinding.FragmentDoctorProfileBinding;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -39,7 +36,7 @@ public class ProfileFragment extends Fragment {
     FirebaseFirestore fStore;
     FirebaseAuth fAuth;
 
-    UsersFactory uF = new UsersFactory();
+    User uF = new User();
     UserInterface doc = uF.getUsers("Doctor");
 
     TextInputEditText doctor_name_text, doctor_badge_text, age_text, ic_text;
@@ -86,7 +83,6 @@ public class ProfileFragment extends Fragment {
                             if (docTask.isSuccessful()) {
                                 DocumentSnapshot doctorDocument = docTask.getResult();
                                 if (doctorDocument.exists()) {
-                                    Log.d(TAG, "a " + doctorDocument.getData() );
                                     doc.setAge((int)(long) doctorDocument.get(getResources().getString(R.string.age)));
                                     doc.setSpecialityId(doctorDocument.getString(getResources().getString(R.string.specialityId)));
                                     doc.setName(doctorDocument.getString(getResources().getString(R.string.name)));

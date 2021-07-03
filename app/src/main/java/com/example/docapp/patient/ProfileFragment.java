@@ -1,11 +1,9 @@
 package com.example.docapp.patient;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -15,7 +13,7 @@ import androidx.fragment.app.Fragment;
 import com.example.docapp.R;
 import com.example.docapp.classes.Patient;
 import com.example.docapp.classes.UserInterface;
-import com.example.docapp.classes.UsersFactory;
+import com.example.docapp.classes.User;
 import com.example.docapp.databinding.FragmentPatientProfileBinding;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -33,7 +31,7 @@ public class ProfileFragment extends Fragment {
     FirebaseFirestore fStore;
     FirebaseAuth fAuth;
 
-    UsersFactory uF = new UsersFactory();
+    User uF = new User();
     UserInterface pat = uF.getUsers("Patient");
 
     TextInputEditText name_text,age_text, ic_text;

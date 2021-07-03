@@ -43,8 +43,7 @@ public class Doctor implements UserInterface
     public String getIc_no() {
         return ic_no;
     }
-
-
+    
     @Override
     public String getBadgeNo() {
         return badgeNo;

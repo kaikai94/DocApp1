@@ -41,7 +41,6 @@ public class Patient implements UserInterface {
         return this.ic_no;
     }
 
-
     @Exclude
     @Override
     public String getBadgeNo() {
@@ -68,9 +67,7 @@ public class Patient implements UserInterface {
 
     @Exclude
     @Override
-    public void setSpecialityId(String no) {
-
-    }
+    public void setSpecialityId(String no) {    }
 
     @Exclude
     @Override
@@ -80,9 +77,7 @@ public class Patient implements UserInterface {
 
     @Exclude
     @Override
-    public void setSpecialityName(String no) {
-
-    }
+    public void setSpecialityName(String no) {    }
 
     @Exclude
     @Override
